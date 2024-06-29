@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="./styles.css" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="./assets/library_4509302.png" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <title>Library</title>
+</head>
+
+<body class="body">
+  <main>
+    <div class="img-div-big">
+      <div class="img-div2">
+        <img src="./assets/green-areca-palm.png" alt="Palm Branches">
+      </div>
+    </div>
+
+    <div class="library">
+      <div class="header-icon">
+        <h1 class="header-text">My Library</h1>
+        <img src="./assets/library_4509302.png" alt="Library Icon" />
+      </div>
+      <div class="add-book-btn-div">
+        <button id="new-book-btn">Add New Book</button>
+      </div>
+
+      <div class="overflow-book-list">
+        <div id="book-list"></div>
+      </div>
+
+
+
+    </div>
+    <div class="img-div">
+      <img src="./assets/palm-tree-leaves-against-white-background.png" alt="Palm Branches">
+    </div>
+  </main>
+
+
+  <dialog id="book-form-dialog">
+    <form id="book-form">
+      <div class="label-input">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+      </div>
+      <div class="label-input">
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required>
+      </div>
+      <div class="label-input">
+        <label for="pages">Pages:</label>
+        <input type="number" id="pages" name="pages" required>
+      </div>
+      <div class="label-input">
+        <label for="read">Read:</label>
+        <input type="checkbox" id="read" name="read">
+      </div>
+
+      <button type="submit">Add Book</button>
+    </form>
+  </dialog>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
