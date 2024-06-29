@@ -1,6 +1,15 @@
 :root {
   --font-family-one: "Montserrat", sans-serif;
   --font-family-two: "Comfortaa", sans-serif;
+  --background-color-one: #e1a95f;
+  --background-color-two: #cc7f3b;
+  --background-color-three: #b87333;
+  --background-color-four: #cc7722;
+
+  --border-color-one: #d2691e;
+  --border-color-two: #926644;
+  --border-color-three: #996515;
+  --border-color-four: #59260b;
   /* #e1a95f
   #E5AA70 */
 }
@@ -12,7 +21,7 @@
 }
 
 body {
-  background-color: #e1a95f;
+  background-color: var(--background-color-one);
   min-height: 100vh;
   font-family: var(--font-family-one);
 }
@@ -24,9 +33,7 @@ main {
 }
 
 .img-div {
-  /* width: 25em; */
   height: 40vh;
-  /* border: 2px solid red; */
 }
 
 .img-div img {
@@ -82,13 +89,13 @@ main {
   border-radius: 0.5em;
   font-family: var(--font-family-two);
   font-size: 1rem;
-  background-color: #cc7f3b;
-  border: 2px solid #d2691e;
+  background-color: var(--background-color-two);
+  border: 2px solid var(--border-color-one);
 }
 
 #new-book-btn:hover {
-  background-color: #d2691e;
-  border: 2px solid #cc7f3b;
+  background-color: var(--border-color-one);
+  border: 2px solid var(--background-color-two);
   cursor: pointer;
 }
 
@@ -107,7 +114,9 @@ main {
 }
 
 .overflow-book-list::-webkit-scrollbar-thumb {
-  background-color: #b87333; /* color of the scroll thumb */
+  background-color: var(
+    --background-color-three
+  ); /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
   border: 1px solid transparent; /* creates padding around scroll thumb */
 }
@@ -118,7 +127,7 @@ main {
 }
 
 .book-card {
-  border: 2px solid #cc7f3b;
+  border: 2px solid var(--background-color-two);
   border-radius: 0.4em;
   padding: 10px;
   margin: 10px;
@@ -138,8 +147,8 @@ main {
   padding: 0.3em;
   width: 70%;
   border-radius: 0.5em;
-  background-color: #b87333;
-  border: 2px solid #926644;
+  background-color: var(--background-color-three);
+  border: 2px solid var(--border-color-two);
 }
 
 .toggle-read-button:hover,
@@ -148,8 +157,8 @@ main {
 }
 
 #book-form-dialog {
-  background-color: #cc7722;
-  border: 1px solid #996515;
+  background-color: var(--background-color-four);
+  border: 1px solid var(--border-color-three);
   border-bottom-right-radius: 0.5em;
 }
 
@@ -171,7 +180,7 @@ main {
 .label-input input {
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #59260b;
+  border-bottom: 2px solid var(--border-color-four);
   outline: 0px;
   color: white;
   height: 1.8em;
@@ -180,12 +189,12 @@ main {
 }
 
 .label-input input:hover {
-  border-bottom: 2px solid #59260b;
+  border-bottom: 2px solid var(--border-color-four);
   outline: 0px;
 }
 
 #book-form button {
-  background-color: #e1a95f;
+  background-color: var(--background-color-one);
   padding: 0.5em 0.6em;
   border-radius: 0.4em;
   border: 1px solid transparent;
@@ -194,6 +203,6 @@ main {
 }
 
 #book-form button:hover {
-  background-color: #b87333;
+  background-color: var(--background-color-three);
   cursor: pointer;
 }
